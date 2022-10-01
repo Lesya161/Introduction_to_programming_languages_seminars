@@ -28,7 +28,7 @@ Console.WriteLine($"max = {max} and min = {min}");
 */
 
 // Задача 4. Напишите программу, которая принимает на вход три числа и выдаёт максимальное из этих чисел.
-
+/*
 Console.Write("Input a first number: ");
 int n1 = Convert.ToInt32(Console.ReadLine());
 Console.Write("Input a second number: ");
@@ -51,3 +51,4 @@ if(n3 > max)
 }
 Console.Write("the maximum of these numbers is ");
 Console.WriteLine(max);
+*/
