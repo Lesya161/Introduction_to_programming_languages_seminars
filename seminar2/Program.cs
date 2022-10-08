@@ -66,7 +66,7 @@ Console.Write(CheckForWeekend(day));
 */
 
 //Вариант 2 - string
-
+/*
 string CheckForWeekend(int week)
 {
     if(week < 1 || week >= 8)
@@ -85,4 +85,4 @@ int day = Convert.ToInt32(Console.ReadLine());
 string result = CheckForWeekend(day);
 Console.WriteLine($"Entered day {day} of the weekend?");
 Console.WriteLine(result);
-
+*/
