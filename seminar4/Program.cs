@@ -45,12 +45,24 @@ Console.WriteLine($"The sum of number {number} is {sum}");
 
 //Задача 29: Напишите программу, которая задаёт массив из m элементов и выводит их на экран.
 /*
+
 int[] CreateArray(int size, int minValue, int maxValue)
 {
     int[] array = new int [size];
     for(int i = 0; i < size; i++)
         array[i] = new Random().Next(minValue, maxValue + 1);
     
+    return array;
+}
+
+int[] CreateUserArray(int size)
+{
+    int[] array = new int[size];
+    for(int i = 0; i < size; i++)
+    {
+        Console.WriteLine("Write a element of your array: "); 
+        array[i] = Convert.ToInt32(Console.ReadLine());
+    }
     return array;
 }
 
@@ -64,11 +76,11 @@ void ShowArray(int[] array)
 
 Console.Write("Input a numbers of elements: ");
 int size = Convert.ToInt32(Console.ReadLine());
-Console.Write("Minimal number of elements: ");
-int min = Convert.ToInt32(Console.ReadLine());
-Console.Write("Maximal number of elements: ");
-int max = Convert.ToInt32(Console.ReadLine());
+//Console.Write("Minimal number of elements: ");
+//int min = Convert.ToInt32(Console.ReadLine());
+//Console.Write("Maximal number of elements: ");
+//int max = Convert.ToInt32(Console.ReadLine());
 
-int[] endArray = CreateArray(size, min, max);
+int[] endArray = CreateUserArray(size);
 ShowArray(endArray);
 */
