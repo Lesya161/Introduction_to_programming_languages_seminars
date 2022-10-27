@@ -1,18 +1,20 @@
-﻿// int[] CreateArray(int size, int minValue, int maxValue)
-// {
-//     int[] array = new int [size];
-//     for(int i = 0; i < size; i++)
-//         array[i] = new Random().Next(minValue, maxValue + 1);
+﻿/*
+int[] CreateArray(int size, int minValue, int maxValue)
+{
+    int[] array = new int [size];
+    for(int i = 0; i < size; i++)
+        array[i] = new Random().Next(minValue, maxValue + 1);
     
-//     return array;
-// }
-// void ShowArray(int[] array)
-// {
-//     for(int i = 0; i < array.Length; i++)
-//         Console.Write(array [i] + " ");
+    return array;
+}
+void ShowArray(int[] array)
+{
+    for(int i = 0; i < array.Length; i++)
+        Console.Write(array [i] + " ");
     
-//     Console.WriteLine();
-// }
+    Console.WriteLine();
+}
+
 int[,] CreateRandom2dArray() 
 {
   Console.Write("Input a number of rows: ");
@@ -40,7 +42,7 @@ void Show2dArray(int[,] array)
     Console.WriteLine();
   }
 }
-
+*/
 
 //Задача 47. Задайте двумерный массив размером m×n, заполненный случайными вещественными числами.
 /*
@@ -101,4 +103,65 @@ Show2dArray(twoArray);
 ElementSearch(twoArray);
 */
 // Задача 52. Задайте двумерный массив из целых чисел. Найдите среднее арифметическое элементов в каждом столбце.
+
+int[,] CreateRandom2dArray() 
+{
+  Console.Write("Input a number of rows: ");
+  int rows = Convert.ToInt32(Console.ReadLine());
+  Console.Write("Input a number of columns: ");
+  int columns = Convert.ToInt32(Console.ReadLine());
+  Console.Write("Input a min possible value: ");
+  int minVal = Convert.ToInt32(Console.ReadLine());
+  Console.Write("Input a max possible value: ");
+  int maxVal = Convert.ToInt32(Console.ReadLine());
+
+  int[,] array = new int[rows, columns];
+
+  for(int i = 0; i < rows; i++) 
+    for (int j = 0; j < columns; j++)
+        array[i,j] = new Random().Next(minVal, maxVal + 1);
+  return array;
+}
+void Show2dArray(int[,] array2d)  
+{
+  for (int i = 0; i < array2d.GetLength(0); i++)
+  {
+    for (int j = 0; j < array2d.GetLength(1); j++)
+      Console.Write(array2d[i,j] + " ");
+    Console.WriteLine();
+  }
+}
+void ShowArrayD(double[] array)
+{
+    for(int i = 0; i < array.Length; i++)
+        Console.Write(array [i] + " ");
+    
+    Console.WriteLine();
+}
+
+
+double[] ArithmeticAverage (int[,] array2d)
+{
+  int size = array2d.GetLength(1);
+
+  double[] array1d = new double [size];
+
+  for(int i = 0; i < array2d.GetLength(1); i++)
+    {
+      for(int j = 0; j < array2d.GetLength(0); j++)
+      {
+        array1d[i] = array1d[i] + array2d[j,i]; 
+      }
+      array1d[i] = array1d[i] / size;
+    }
+
+  return array1d;
+}
+
+int[,] array2d = CreateRandom2dArray();
+
+Show2dArray(array2d);
+double[] array1 = ArithmeticAverage(array2d);
+Console.WriteLine();
+ShowArrayD(array1);
 
