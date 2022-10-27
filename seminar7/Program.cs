@@ -85,6 +85,7 @@ double [,] oneArray = CreateRandomDouble2dArray();
 Show2dDoubleArray(oneArray);
 */
 // Задача 50. Напишите программу, которая на вход принимает позиции элемента в двумерном массиве, и возвращает значение этого элемента или же указание, что такого элемента нет.
+
 /*
 void ElementSearch(int[,] array)
 {
@@ -102,8 +103,9 @@ int[,] twoArray = CreateRandom2dArray();
 Show2dArray(twoArray);
 ElementSearch(twoArray);
 */
-// Задача 52. Задайте двумерный массив из целых чисел. Найдите среднее арифметическое элементов в каждом столбце.
 
+// Задача 52. Задайте двумерный массив из целых чисел. Найдите среднее арифметическое элементов в каждом столбце.
+/*
 int[,] CreateRandom2dArray() 
 {
   Console.Write("Input a number of rows: ");
@@ -164,4 +166,4 @@ Show2dArray(array2d);
 double[] array1 = ArithmeticAverage(array2d);
 Console.WriteLine();
 ShowArrayD(array1);
-
+*/
