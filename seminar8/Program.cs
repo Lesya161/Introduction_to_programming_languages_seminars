@@ -1,4 +1,4 @@
-﻿/*
+﻿
 int[,] CreateRandom2dArray() 
 {
   Console.Write("Input a number of rows: ");
@@ -26,7 +26,7 @@ void Show2dArray(int[,] array)
     Console.WriteLine();
   }
 }
-*/
+
 
 /*
 //Задача 54: Задайте двумерный массив. Напишите программу, которая упорядочит по убыванию элементы каждой строки двумерного массива.
@@ -78,19 +78,19 @@ void MinimumRow(int[,] array)
         iMinSumRow = i;
       }
 
-     Console.WriteLine($"Строка с наименьшей суммой элементов {iMinSumRow + 1}");
+     Console.WriteLine($"The row with the smallest sum of elements is {iMinSumRow + 1}");
   }
 
   else
-    Console.WriteLine("Массив квадратный");
+    Console.WriteLine("Square array");
 }
 
 int [,] twoArray = CreateRandom2dArray();
 Show2dArray(twoArray);
 Console.WriteLine();
 MinimumRow(twoArray);
-*/
 
+*/
 
 //Задача 58: Задайте две матрицы. Напишите программу, которая будет находить произведение двух матриц.
 /*
