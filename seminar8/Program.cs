@@ -155,4 +155,3 @@ void Show3dArray(int[, ,] array)
 int[, ,] array3d = CreateRandom3dArray();
 Show3dArray(array3d);
 */
-
